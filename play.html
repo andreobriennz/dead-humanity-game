@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Game | Dead Humanity</title>
+
+    <!-- Styles -->
+    <link href="public/css/app.css" rel="stylesheet">
+
+    <style type="text/css">
+        .nav, .collapse, .navbar-nav, ul, li {
+            display: inline-block !important;
+            padding-right: 0 !important;
+        }
+        ul.nav, .navbar-nav, .navbar-right {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="public/css/main.css">
+
+	<noscript>
+		<style type="text/css">p{background-color:#F4645F;text-align:center;margin:0;padding:1em;}</style>
+		<p>This game requires JavaScript. Please enable it to continue.</p>
+	</noscript>
+
+    <div id="app">
+        <div class="collapse navbar-collapse" id="app-navbar-collapse">
+            <!-- Left Side Of Navbar -->
+            <ul class="nav navbar-nav">
+                &nbsp; 
+            </ul>
+
+            <!-- Right Side Of Navbar -->
+            <ul class="nav navbar-nav navbar-right">
+                <!-- Authentication Links -->
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html#how-to-play">How To Play</a></li>
+                <li><a href="./login">Log In</a></li>
+                <li><a href="./register">Sign Up</a></li>
+            </ul>
+        </div>
+
+        <section class="scores">
+            <div id="round" class="round"></div>
+            <div id="human-score" class="score"></div>
+            <div id="computer-score" class="score"></div>
+        </section>
+    
+        <section id="cards" class="cards">
+            <div id="1"></div>
+            <div id="2"></div>
+            <div id="3"></div>
+            <div id="4"></div>
+            <div id="5"></div>
+            <div id="6"></div>
+            <a onclick="clearCards()" class="buttons" id="clear-cards" style="display: none;">Get new cards</a>
+        </section>
+    
+        <section id="end-turn" class="cardPlayed">
+            <div id="human-played"></div>
+            <div class="loader" id="computer-loading" style="display: none;">Loading...</div>
+            <div id="computer-played"></div>
+            <a onclick="newTurn()" class="buttons" id="next" style="display: none;">Next round</a>
+        </section>
+    
+        <section id="war-or-peace" class="war-or-peace" style="display: none;">
+            <div id="war" class="war"></div>
+            <div id="peace" class="peace"></div>
+            <div id="button"></div>
+        </section>
+    
+        <section id="winner" class="heading" style="display: none;"></section>
+    </div>
+
+    <!-- Scripts -->
+    <!-- <script src="/js/app.js"></script> -->
+    <script src="public/js/game.js"></script>
+    <link href="public/css/app.css" rel="stylesheet">
+    <style type="text/css">
+        a {
+            visibility: visible;
+        }
+        body {
+            padding-bottom: 8em;
+        }
+        hr {
+            margin-bottom: 0.5em !important;
+            margin-top: 0 !important;
+        }
+    </style>
+</body>
+</html>

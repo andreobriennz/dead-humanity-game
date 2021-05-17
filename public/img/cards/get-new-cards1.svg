@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="155px" height="217px" viewBox="0 0 155 217" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>new</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Dead-Humanity-Cards" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-430.000000, -811.000000)">
+            <g id="new" transform="translate(430.000000, 811.000000)">
+                <rect id="Rectangle-3" fill="#4A4A4A" x="0" y="0" width="155" height="217" rx="3"></rect>
+                <g id="category-text" transform="translate(19.000000, 86.000000)" font-size="20" font-family="LucidaGrande, Lucida Grande, Lato, san-serif" fill="#FAFAFA" opacity="0.8" font-weight="normal">
+                    <text id="Pick-up-6-new-cards">
+                        <tspan x="23.4511719" y="19">Pick up </tspan>
+                        <tspan x="0.23828125" y="42">6 new cards</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,223 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  font-family: lato, sans-serif;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 100%;
+  padding-bottom: 4em;
+}
+
+footer {
+  background-color: #fafafa !important;
+}
+
+h1 {
+  color: #F4645F !important;
+  text-align: center !important;
+  width: 100% !important;
+  margin: 0 auto;
+}
+
+.cardPlayed p {
+  text-align: center;
+}
+
+a.buttons {
+  cursor: pointer;
+  font-size: 1.4em;
+  text-align: center;
+  padding: 0.5em 0;
+  margin-top: 1em;
+  width: 33%;
+  margin-left: 33%;
+}
+
+a.mid-button {
+  width: 100% !important;
+  margin-left: calc(50vw - 3em);
+  margin-top: 4em;
+}
+
+.heading {
+  width: 100%;
+}
+
+/*LAYOUT*/
+.scores {
+  padding-top: 1em;
+}
+
+.scores, .cardPlayed, .war-or-peace {
+  margin: 0 auto;
+}
+
+.score, .cardPlayed div, .cardPlayed img, .war-or-peace div, .war-or-peace img {
+  display: inline-block;
+  width: 45%;
+}
+
+.cardPlayed img, .war-or-peace img {
+  width: 100%;
+}
+
+.score {
+  width: 49%;
+}
+
+.score, .round {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.cards div, .score {
+  display: inline-block;
+}
+
+.cards, .cardPlayed, .war-or-peace {
+  width: 100%;
+  margin-left: 0.5vw;
+}
+
+.cards {
+  padding-left: 0.25em;
+  margin-left: -0.15em;
+}
+
+.cards div {
+  width: 49vw;
+}
+
+.cards div img {
+  width: 100%;
+  cursor: pointer;
+  padding: 0.1em;
+  padding-top: 0.2em;
+}
+
+.war, .peace {
+  font-size: 1.5em;
+  padding: 2em 0 2em 1.2em;
+  text-align: center;
+}
+
+
+@media screen and (min-width: 1000px) {
+  .cards {
+    width: calc(100vw - 1em);
+    margin-left: 0.9em;
+  }
+
+  .cards div img {
+    width: 100%;
+    padding: 0.5em;
+    cursor: pointer;
+  }
+
+  .cards div {
+    width: calc((98vw - 1em) / 6);
+  }
+
+  .scores, .cardPlayed {
+    width: 33%;
+    margin: 0 auto;
+  }
+
+  .war-or-peace {
+    width: 45%;
+    margin-left: 27.5%;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+
+/*Componients*/
+.loader {
+  color: #F4645F;
+  font-size: 4.5em;
+  text-indent: -9999em;
+  overflow: hidden;
+  width: 1em !important;
+  height: 1em;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load6 1.7s infinite ease;
+  animation: load6 1.7s infinite ease;
+
+  margin-left: 15%;
+  margin-bottom: 25%;
+}
+@-webkit-keyframes load6 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+@keyframes load6 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
